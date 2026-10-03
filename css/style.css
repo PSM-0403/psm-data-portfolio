@@ -1094,6 +1094,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--text-dim);
 }
 
+.pd-stack { display: flex; flex-direction: column; gap: 14px; }
+.pd-stack-row {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+.pd-stack-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-faint);
+  padding-top: 6px;
+}
+@media (max-width: 620px) {
+  .pd-stack-row { grid-template-columns: 1fr; gap: 6px; }
+  .pd-stack-label { padding-top: 0; }
+}
+
 .pd-retro {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1104,6 +1122,81 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .pd-retro p + p { margin-top: 14px; }
 
 .pd-block .section-hint { margin: 10px 0 0; }
+.pd-block h3 {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 28px 0 12px;
+}
+
+/* 데이터 분석 상세: 지표 카드 / 표 / 인사이트 카드 */
+.pd-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.pd-kpi {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+}
+.pd-kpi strong {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pd-kpi span { font-size: 0.82rem; color: var(--text-dim); }
+
+.pd-table-wrap { overflow-x: auto; }
+.pd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.pd-table th,
+.pd-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.6;
+}
+.pd-table th {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  font-weight: 600;
+}
+.pd-table td { color: var(--text-dim); }
+.pd-table td:first-child { color: var(--text); font-weight: 600; white-space: nowrap; }
+
+.pd-insights { display: flex; flex-direction: column; gap: 16px; }
+.pd-insight {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-2);
+  border-radius: var(--radius-sm);
+  padding: 22px 24px;
+}
+.pd-insight.is-caution { border-left-color: var(--accent-3); }
+.pd-insight-tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent-2);
+  margin-bottom: 6px;
+}
+.pd-insight.is-caution .pd-insight-tag { color: var(--accent-3); }
+.pd-insight h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.pd-insight p { margin: 0; }
+.pd-insight p + p, .pd-insight p + .pd-list, .pd-insight .pd-list + p { margin-top: 10px; }
 
 .pd-footer-nav {
   display: flex;
@@ -1118,4 +1211,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .pd-banner-brand { gap: 12px; }
   .pd-banner-icon { width: 40px; height: 40px; }
   .pd-footer-nav { flex-direction: column; gap: 16px; align-items: flex-start; }
+  .pd-kpis { grid-template-columns: repeat(2, 1fr); }
+  .pd-insight { padding: 18px 18px; }
 }
