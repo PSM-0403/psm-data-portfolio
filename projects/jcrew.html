@@ -44,7 +44,7 @@
 
   <div class="pd-badges reveal">
     <span class="pd-badge">개인 프로젝트 · 1인</span>
-    <span class="pd-badge">2026.05 - 현재 (MVP 완성, 테스트/수정 중)</span>
+    <span class="pd-badge">2026.05 - 현재</span>
   </div>
 
   <h1 class="pd-title reveal">J-CREW</h1>
@@ -76,80 +76,221 @@
     <div class="pd-block reveal">
       <h2>정보</h2>
       <ul class="pd-meta-list">
-        <li class="pd-meta-item"><span>기간</span><strong>2026.05.06 ~ 현재 (MVP 완성, 테스트 및 수정 진행 중)</strong></li>
-        <li class="pd-meta-item"><span>참여인원</span><strong>1명 (기획·개발·배포 단독 진행)</strong></li>
-        <li class="pd-meta-item"><span>담당 역할</span><strong>기획부터 프론트엔드·백엔드 개발, DB 설계, AI 기능 구현, 배포까지 전 과정을 혼자 진행</strong></li>
+        <li class="pd-meta-item"><span>기간</span><strong>2026.05.06 ~ 현재</strong></li>
+        <li class="pd-meta-item"><span>참여인원</span><strong>1명 (기획·개발·배포 단독 진행, AI 코딩 도구 활용)</strong></li>
+        <li class="pd-meta-item"><span>담당 역할</span><strong>문제 정의, 이탈 위험 지표 설계, 출결·보강 데이터 수집 설계, 앱 개발과 배포</strong></li>
         <li class="pd-meta-item"><span>체험 계정</span><strong>관리자 jcrew1234<br>회원 피수민 / 2358 / 0000</strong></li>
       </ul>
     </div>
   </div>
 
   <div class="pd-block reveal">
-    <h2><span class="pd-num">Preview</span>실제 화면</h2>
-    <div class="pd-shots">
-      <figure class="pd-shot">
-        <img src="../assets/screenshots/jcrew/attendance-feedback.png" alt="출석 체크 및 수업 내용 피드백 화면" loading="lazy">
-        <figcaption>출석 체크 — 수업 내용과 회원별 피드백을 함께 기록</figcaption>
-      </figure>
-      <figure class="pd-shot">
-        <img src="../assets/screenshots/jcrew/monthly-report.png" alt="월간 운영 리포트 및 이탈 위험 회원 분석 화면" loading="lazy">
-        <figcaption>월간 운영 리포트 — AI가 출석·수강료 현황을 요약하고 위험 회원을 분석</figcaption>
-      </figure>
-      <figure class="pd-shot">
-        <img src="../assets/screenshots/jcrew/risk-members.png" alt="이탈 위험 회원 현황 화면" loading="lazy">
-        <figcaption>이탈 위험 회원 — 룰 기반 위험도 판정 + 회원별 AI 코멘트</figcaption>
-      </figure>
-      <figure class="pd-shot">
-        <img src="../assets/screenshots/jcrew/parent-notify-agent.png" alt="학부모 알림 에이전트 화면" loading="lazy">
-        <figcaption>학부모 알림 에이전트 — 수업 피드백 기반 개인별 메시지 자동 생성</figcaption>
-      </figure>
-      <figure class="pd-shot">
-        <img src="../assets/screenshots/jcrew/ai-chatbot.png" alt="회원용 AI 챗봇 대화 화면" loading="lazy">
-        <figcaption>회원용 AI 챗봇 — 수강료·출석 문의에 실시간 응답</figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <div class="pd-block reveal">
     <h2><span class="pd-num">Features</span>핵심 기능</h2>
     <ul class="pd-list">
-      <li>회원 가입 승인, 출석 체크</li>
-      <li>수강료 납부 관리 — 형제 할인 안내, 계좌이체 신청 후 강사 확인 처리</li>
-      <li>이탈 위험 회원 자동 감지 (룰 기반 판정 + AI 코멘트 생성)</li>
-      <li>학부모 알림 메시지 자동 생성 (AI)</li>
-      <li>월간 운영 리포트 자동 생성 (AI)</li>
-      <li>강사 &amp; 회원 실시간 1:1 채팅</li>
-      <li>회원용 AI 챗봇 (수업 예약·납부 안내 등)</li>
-      <li>홈 화면 설치가 가능한 PWA로 제작해 네이티브 앱에 가까운 사용 경험 제공</li>
+      <li>회원 가입 승인, 수업 배정, 출결·납부 이력 관리</li>
+      <li>출석 체크 (결석 시 사전 연락 / 무단 기록, 휴강 처리, 수업 내용·피드백 저장)</li>
+      <li>수강료 납부 관리 (형제 할인 안내, 계좌이체 신청 후 강사 확인 처리)</li>
+      <li>보강 신청과 승인 (회원이 수업·날짜 선택 → 강사 승인 → 그날 출석 체크 목록에 표시)</li>
+      <li>이탈 위험 회원 감지 (규칙 기반 판정과 사유 + AI 코멘트)와 운영 지표 카드</li>
+      <li>학부모 알림 메시지, 월간 운영 리포트 자동 생성 (AI)</li>
+      <li>강사·회원 실시간 1:1 채팅, 회원용 AI 챗봇</li>
+      <li>홈 화면에 설치해 앱처럼 쓰는 PWA</li>
     </ul>
   </div>
 
   <div class="pd-block reveal">
-    <h2><span class="pd-num">Stack</span>Tech Stack</h2>
-    <div class="tech-pills">
-      <span class="tech-pill">React 19</span><span class="tech-pill">Vite</span><span class="tech-pill">Zustand</span>
-      <span class="tech-pill">JavaScript</span><span class="tech-pill">Supabase (PostgreSQL)</span>
-      <span class="tech-pill">Supabase Realtime</span><span class="tech-pill">Supabase Storage</span>
-      <span class="tech-pill">OpenAI API</span><span class="tech-pill">Vercel Serverless Functions</span>
+    <h2><span class="pd-num">Problem</span>문제 정의</h2>
+    <p>
+      앱을 만들면서 느낀 건, 아이들을 잘 가르치는 것만큼이나 운영의 핵심은 회원 관리라는 점이었습니다.
+      특히 아이가 그만두고 나서야 알게 되는 경우가 많아서, 쌓이는 출결 데이터로 이탈을 미리 알아챌 수 있도록 이탈 위험 회원을 알려주는 기능을 넣었습니다.
+    </p>
+    <p style="margin-top:12px">
+      기준은 현장에서 본 아이들에게서 가져왔습니다.
+      미리 연락하고 빠지는 아이는 계속 다녔지만, 말없이 세 번 이상 빠진 아이는 대부분 그만뒀습니다.
+    </p>
+    <div class="pd-insights" style="margin-top:16px">
+      <div class="pd-insight">
+        <span class="pd-insight-tag">현장 관찰</span>
+        <h3>이탈 신호는 결석 자체가 아니라 연락 없는 결석이었습니다</h3>
+        <p>
+          말없이 계속 빠지는 아이들을 보면 대부분 이유가 있었습니다. 농구에 흥미가 떨어졌거나, 학원 친구들과 관계가 좋지 않거나,
+          나오더라도 부모님이 억지로 보내는 경우였습니다. 이런 아이들은 코치가 먼저 연락하고 더 챙겨야 붙잡을 수 있습니다.
+        </p>
+        <p>
+          그래서 "몇 번 빠졌나"가 아니라 "연락 없이 몇 번 빠졌나"를 신호로 보기로 했습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Metrics</span>지표 설계</h2>
+    <p style="margin-bottom:16px">
+      출석률과 이탈 신호는 보려는 것이 달라서 하나의 숫자로 합치지 않고 나눴습니다.
+      출석률은 "수업을 얼마나 받고 있나"이고, 이탈 신호는 "학원과 연락이 끊겼나"입니다.
+    </p>
+    <div class="pd-table-wrap">
+      <table class="pd-table">
+        <thead>
+          <tr><th>지표</th><th>정의</th><th>근거</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>출석률</td>
+            <td>(정규 출석 + 보강 출석) ÷ 정규 수업 수</td>
+            <td>보강을 들었으면 빠진 수업을 채운 것이라 출석으로 인정</td>
+          </tr>
+          <tr>
+            <td>이탈 위험 · 높음</td>
+            <td>연속 무단 결석 3회 (미납이면 매우높음). 보강 날 무단 결석도 포함</td>
+            <td>말없이 3번 이상 빠진 아이는 대부분 그만둠. 주 1회 수업 기준으로 약 3주. 보강도 회원이 직접 잡은 수업이라 정규 수업과 같은 기준 적용</td>
+          </tr>
+          <tr>
+            <td>이탈 위험 · 보통</td>
+            <td>최근 5회 중 무단 결석 3회</td>
+            <td>말없이 빠지다가 부모님 손에 한 번 나오고 다시 안 나오는 경우. 중간에 한 번 나오면 연속 기록이 끊겨 위 규칙에 안 잡힘. 5회는 주 1회 기준 한 달(5주인 달 포함)</td>
+          </tr>
+          <tr>
+            <td>무단 결석 비율</td>
+            <td>월별 결석 중 연락 없는 결석의 비율</td>
+            <td>결석이 많은지보다 말없이 빠지는 결석이 늘고 있는지를 보기 위함</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-hint">수강료 미납이면서 출석률이 낮은 경우(예: 미납 + 출석률 60% 미만 = 높음)도 위험으로 함께 보고, 어떤 규칙에 걸렸는지 사유를 같이 보여줍니다.</p>
+    <p style="margin-top:14px">
+      위험으로 뜬 아이는 학부모님께 연락해 상담하고, 수업 때 아이에게 더 신경 쓰고 따로 이야기를 나눕니다.
+    </p>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Data Design</span>데이터 수집 설계</h2>
+    <p style="margin-bottom:14px">
+      결석 사유와 보강 기록은 코치가 평소 하는 출석 체크와 보강 처리 과정에서 함께 남기게 해, 따로 입력할 일이 거의 없도록 했습니다.
+    </p>
+    <ul class="pd-list">
+      <li>출석 체크에서 결석을 누르면 사전 연락 / 무단 중 하나를 고름 (기본값은 무단)</li>
+      <li>회원이 앱에서 시간대별 수업 목록과 이번 달 날짜를 골라 보강을 신청하면, 코치에게 채팅 알림이 감</li>
+      <li>코치가 승인하면 그 날짜 그 수업의 출석 체크 목록에 보강 회원이 함께 나타나고, 평소처럼 출결만 체크하면 보강 기록이 쌓임</li>
+      <li>출결 테이블에 결석 사유와 보강 여부를 함께 저장하고, 지표 계산은 코드 한 파일에서만 정의해 화면마다 숫자가 달라지지 않게 함</li>
+    </ul>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Data</span>데이터</h2>
+    <div class="pd-kpis pd-kpis-3">
+      <div class="pd-kpi"><strong>73</strong><span>회원</span></div>
+      <div class="pd-kpi"><strong>9</strong><span>수업</span></div>
+      <div class="pd-kpi"><strong>2,091</strong><span>출결 기록</span></div>
+    </div>
+    <p>
+      처음에는 실제 회원 데이터로 테스트했지만, 개인정보 때문에 모두 더미 데이터로 바꿨고 실제 데이터는 보관하지 않습니다.
+      더미 데이터는 초등부터 성인까지 9개 수업, 2026년 6~9월 기간으로 실제 학원 한 지점 규모에 맞췄고, 결석 중 사전 연락 비율은 현장 경험대로 약 65%로 넣었습니다.
+    </p>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Check</span>규칙 동작 확인</h2>
+    <p style="margin-bottom:16px">
+      실제 데이터가 없어서 규칙이 맞는지는 검증할 수 없었습니다. 대신 규칙이 의도대로 작동하는지 확인하려고, 패턴을 정해 둔 더미 회원 7명을 넣고 결과를 봤습니다.
+    </p>
+    <div class="pd-table-wrap">
+      <table class="pd-table">
+        <thead>
+          <tr><th>패턴 (오래된 것 → 최근)</th><th>출석률</th><th>판정</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>무단 · 무단 · 무단 (미납)</td><td>59%</td><td>매우높음</td></tr>
+          <tr><td>무단 · 무단 · 무단</td><td>90%</td><td>높음</td></tr>
+          <tr><td>무단 · 무단 → 보강 잡고 무단 불참</td><td>89%</td><td>높음</td></tr>
+          <tr><td>무단 · 출석 · 무단 · 출석 · 무단 (2명)</td><td>83%, 88%</td><td>보통</td></tr>
+          <tr><td>사전 연락 결석 → 보강 출석 (2명)</td><td>85%, 93%</td><td>정상 (보강이 출석률에 반영)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-hint">출석률이 90% 가까이 되는 아이도 연락 없이 세 번 빠지면 높음으로 잡힙니다.</p>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Preview</span>실제 화면</h2>
+    <div class="pd-shots">
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/ops-metrics.png" alt="운영 지표 카드 화면" loading="lazy">
+        <figcaption>운영 지표 카드. 이탈 위험 단계별 회원 수와 월별 출석률, 무단 결석 비율을 코치 홈에서 바로 봅니다. (더미 데이터)</figcaption>
+      </figure>
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/churn-result.png" alt="이탈 위험 회원 분석 결과 화면" loading="lazy">
+        <figcaption>이탈 위험 분석 결과. 회원마다 어떤 규칙에 걸렸는지 사유를 함께 보여주고, 같은 단계에서는 연락이 끊긴 회원을 먼저 보여줍니다.</figcaption>
+      </figure>
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/absence-reason.png" alt="결석 사유 선택 화면" loading="lazy">
+        <figcaption>출석 체크. 결석을 누르면 사전 연락과 무단 중 하나를 고릅니다.</figcaption>
+      </figure>
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/makeup-request.png" alt="회원 보강 신청 화면" loading="lazy">
+        <figcaption>회원 보강 신청. 시간대별 수업 목록에서 수업을 고르고, 이번 달 남은 날짜 중 하나를 고릅니다.</figcaption>
+      </figure>
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/makeup-attendance.png" alt="출석 체크 목록의 보강 회원 표시" loading="lazy">
+        <figcaption>승인된 보강 회원은 그 날짜 그 수업의 출석 체크 목록에 "보강" 표시와 함께 나타납니다.</figcaption>
+      </figure>
+      <figure class="pd-shot">
+        <img src="../assets/screenshots/jcrew/parent-notify-agent.png" alt="학부모 알림 에이전트 화면" loading="lazy">
+        <figcaption>학부모 알림 에이전트. 수업 내용과 피드백을 바탕으로 학부모님께 보낼 메시지 초안을 만들고, 코치가 확인한 뒤 보냅니다.</figcaption>
+      </figure>
     </div>
   </div>
 
   <div class="pd-block reveal">
     <h2><span class="pd-num">Results</span>결과 &amp; 성과</h2>
     <ul class="pd-list">
-      <li>회원 관리 · 출석 · 실시간 채팅 · AI 에이전트 등 전체 기능을 실제 데이터로 반복 테스트했고, 이후 개인정보 보호를 위해 더미 데이터로 전환</li>
-      <li>12개 테이블 기반 데이터 모델을 설계해 회원관리 · 출결 · 결제 · AI 에이전트 결과까지 하나의 시스템으로 통합</li>
-      <li>OpenAI API 키가 클라이언트에 노출되지 않도록 Vercel Serverless Function으로 프록시 처리해 보안 확보</li>
+      <li>현장에서 본 패턴을 바탕으로 이탈 신호를 "연락 없는 결석"으로 정의하고, 이를 기록하고 계산할 수 있도록 출결 구조와 지표를 설계했습니다.</li>
+      <li>보강 신청부터 승인, 출결 기록까지 한 흐름으로 이어서, 코치가 따로 입력하지 않아도 보강이 출석률에 반영되게 했습니다.</li>
+      <li>출결이 1,000건을 넘으면서 출석률이 최근 1,000건으로만 계산되던 문제를 찾아 고쳤습니다.</li>
+      <li>출석 체크, 수강료, 학부모 메시지 초안, 월간 리포트처럼 손으로 하던 행정 업무를 앱 하나로 모았습니다.</li>
     </ul>
   </div>
 
   <div class="pd-block reveal">
-    <h2><span class="pd-num">Retrospective</span>회고</h2>
+    <h2><span class="pd-num">Stack</span>Tech Stack</h2>
+    <div class="pd-stack">
+      <div class="pd-stack-row">
+        <span class="pd-stack-label">데이터 · 지표</span>
+        <div class="tech-pills">
+          <span class="tech-pill">SQL</span><span class="tech-pill">Supabase (PostgreSQL)</span>
+          <span class="tech-pill">JavaScript (지표 계산)</span>
+        </div>
+      </div>
+      <div class="pd-stack-row">
+        <span class="pd-stack-label">화면</span>
+        <div class="tech-pills">
+          <span class="tech-pill">React</span><span class="tech-pill">Vite</span>
+          <span class="tech-pill">Zustand</span><span class="tech-pill">PWA</span>
+        </div>
+      </div>
+      <div class="pd-stack-row">
+        <span class="pd-stack-label">AI</span>
+        <div class="tech-pills">
+          <span class="tech-pill">OpenAI API (위험 회원 코멘트, 메시지 초안, 월간 리포트)</span>
+        </div>
+      </div>
+      <div class="pd-stack-row">
+        <span class="pd-stack-label">서버 · 배포</span>
+        <div class="tech-pills">
+          <span class="tech-pill">Vercel (Serverless Functions)</span><span class="tech-pill">Supabase Realtime (채팅)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-block reveal">
+    <h2><span class="pd-num">Limits</span>한계 &amp; 개선 방향</h2>
     <div class="pd-retro">
-      <p>실제로 겪었던 불편함을 직접 해결하는 방식으로 개발하다 보니 더 몰입해서 깊이 고민할 수 있었고, 사용하면서 추가하고 싶은 기능이 계속 떠올라 자연스럽게 기능이 고도화됐습니다.</p>
-      <p>학원 운영에서 가장 중요한 결제 현황을 한눈에 확인하고 관리할 수 있게 된 점이 특히 만족스러웠습니다. 다만 아직 카드 결제 연동은 하지 못한 점이 아쉬운데, 추후 이 부분까지 연결하고 UI/디자인도 다듬어서 원장님께 전달할 계획입니다.</p>
-      <p>테스트 코드가 없어서 기능을 수정하거나 추가할 때마다 기존 기능이 제대로 동작하는지 수동으로 확인해야 하고, 이 과정에서 놓친 부분이 회귀 버그로 이어질 위험이 있습니다.</p>
-      <p>컴포넌트가 하나의 파일에 몰려있어 코드가 커질수록 유지보수가 어렵고, 관련 없는 기능까지 얽혀 있어 버그 원인을 찾기 어려워지는 문제도 있어 앞으로 보완이 필요합니다.</p>
+      <p><strong>실제 데이터로 검증하지 못함</strong>: 규칙은 현장 경험에서 세운 가설이고, 실제 데이터는 개인정보 때문에 보관하지 않아 위험으로 잡힌 아이가 실제로 그만뒀는지는 확인하지 못했습니다. 더미 데이터로는 규칙이 의도대로 작동하는지까지만 확인했습니다.</p>
+      <p><strong>기준의 범위</strong>: 기준은 주 1회 수업을 듣는 아이들을 보며 잡았습니다. 주 2회 수업을 듣는 아이는 같은 3회가 약 1.5주라 알림이 조금 더 일찍 뜰 수 있어, 이런 경우는 코치가 상황을 보고 판단합니다.</p>
+      <p><strong>입력에 기대는 부분</strong>: 사전 연락 여부는 코치가 고르는 값이라, 고르지 않으면 기본값인 무단으로 남아 위험이 실제보다 크게 잡힐 수 있습니다. 그래서 출석 체크를 할 때 사유까지 바로 고르는 것이 중요합니다.</p>
+      <p><strong>개선 방향</strong>: 앱을 마무리하면 지금 일하는 농구교실 원장님께 드려 실제로 쓸 예정입니다. 쓰면서 그만둔 아이가 생기면 그만둔 날짜와 이유를 함께 기록해 두려고 합니다. 그러면 위험으로 잡혔던 아이 중 실제로 그만둔 비율을 보고, 경험으로 정한 기준(연속 3회, 최근 5회)을 데이터로 다시 정할 수 있습니다.</p>
     </div>
   </div>
 

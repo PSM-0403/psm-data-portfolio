@@ -1135,6 +1135,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 14px;
   margin-bottom: 24px;
 }
+.pd-kpis-3 { grid-template-columns: repeat(3, 1fr); }
 .pd-kpi {
   background: var(--surface);
   border: 1px solid var(--border);
