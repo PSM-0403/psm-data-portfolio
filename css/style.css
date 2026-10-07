@@ -40,6 +40,8 @@ body {
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  word-break: keep-all;      /* 한글이 단어 중간에서 줄바꿈되지 않도록 */
+  overflow-wrap: break-word; /* 긴 파일명·URL은 필요할 때만 끊음 */
 }
 
 h1, h2, h3 {
@@ -373,72 +375,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ===================== ABOUT ===================== */
 .about-grid {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  max-width: 760px;
 }
-
-.avatar-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 28px;
-  background: var(--gradient-soft);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.avatar-glow {
-  position: absolute;
-  width: 60%; height: 60%;
-  background: var(--gradient);
-  filter: blur(60px);
-  opacity: 0.55;
-  border-radius: 50%;
-}
-.avatar-initials {
-  position: relative;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 4.2rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.about-stat-card {
-  display: flex;
-  gap: 16px;
-  margin-top: 20px;
-}
-.about-stat {
-  flex: 1;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 16px;
-  text-align: center;
-}
-.about-stat strong {
-  display: block;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.5rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.about-stat span { font-size: 0.78rem; color: var(--text-dim); }
 
 .about-text p { color: var(--text-dim); margin-bottom: 18px; }
 .about-facts { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
 .about-facts li { font-size: 0.94rem; color: var(--text-dim); display: flex; gap: 10px; }
 
-@media (max-width: 860px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .avatar-frame { max-width: 280px; margin: 0 auto; }
-  .about-stat-card { max-width: 280px; margin: 20px auto 0; }
-}
 
 /* ===================== SKILLS ===================== */
 .skills-grid {

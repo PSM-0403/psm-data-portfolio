@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>피수민 | Developer Portfolio</title>
-<meta name="description" content="피수민의 개발자 포트폴리오. 프로젝트, 기술 스택, 경력을 소개합니다.">
+<title>피수민 | Data Analyst Portfolio</title>
+<meta name="description" content="데이터 분석가 피수민의 포트폴리오. 프로젝트, 기술 스택, 경력을 소개합니다.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="피수민 | Developer Portfolio">
-<meta property="og:description" content="데이터 분석가 · AI 에이전트 개발자 피수민의 포트폴리오. BeautyGuard, J-CREW, JejuTrip AI 프로젝트를 소개합니다.">
+<meta property="og:title" content="피수민 | Data Analyst Portfolio">
+<meta property="og:description" content="데이터 분석가 피수민의 포트폴리오. BeautyGuard, J-CREW, JejuTrip AI 프로젝트를 소개합니다.">
 <meta property="og:image" content="https://portfolio-psm.vercel.app/assets/og-image.png">
 <meta property="og:url" content="https://portfolio-psm.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
     <p class="hero-tagline">배움이라는 연료로 새로운 도전을 향해 가속합니다.</p>
     <p class="hero-desc">
       데이터에서 패턴을 찾아내고, 그 인사이트를 실제 의사결정으로 연결하는 것을 좋아합니다.
-      제주 여행 데이터부터 화장품 시장 트렌드, 농구교실 운영 데이터까지, 현장의 문제를 데이터로 풀어왔습니다.
+      제주 여행 데이터부터 화장품 시장 트렌드, 농구교실 출결 데이터까지 서로 다른 분야의 데이터를 다뤄 왔습니다.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">프로젝트 보기 →</a>
@@ -80,23 +80,6 @@
     <h2 class="section-title reveal">저를 소개합니다</h2>
 
     <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="avatar-frame">
-          <div class="avatar-glow"></div>
-          <div class="avatar-initials">PSM</div>
-        </div>
-        <div class="about-stat-card">
-          <div class="about-stat">
-            <strong>3개</strong>
-            <span>완성한 프로젝트</span>
-          </div>
-          <div class="about-stat">
-            <strong>5개</strong>
-            <span>보유 자격증</span>
-          </div>
-        </div>
-      </div>
-
       <div class="about-text reveal">
         <p>
           수원대학교 컴퓨터학부 컴퓨터SW에서 전공 지식을 쌓으며, 정보처리기사·ADsP·SQLD·AI-POT 등
@@ -105,9 +88,8 @@
         </p>
         <p>
           취향 기반 여행 코스를 추천하는 JejuTrip AI, 화장품 시장 트렌드를 분석하는 BeautyGuard,
-          농구교실 운영을 돕는 AI 에이전트(J-CREW)까지 — 서로 다른 도메인의 데이터를 다루며
-          문제를 정의하고 데이터로 풀어내는 경험을 쌓았습니다. 데이터로 현장의 문제를 풀어내는
-          데이터 분석가로 성장하는 것이 목표입니다.
+          농구교실 운영을 돕는 관리 플랫폼 J-CREW까지 서로 다른 도메인의 데이터를 다뤄 봤습니다.
+          현장의 문제를 데이터로 풀어내는 데이터 분석가가 되는 것이 목표입니다.
         </p>
 
         <ul class="about-facts">
@@ -134,13 +116,13 @@
         <h3>SQL &amp; Database</h3>
         <div class="skill-tags">
           <button class="skill-tag" type="button">SQL
-            <span class="skill-tooltip">SQLD 자격증 보유. Supabase(PostgreSQL) 기반 관계형 데이터베이스 쿼리 설계 및 최적화.</span>
+            <span class="skill-tooltip">SQLD 자격증 보유. BeautyGuard에서 DB의 상품·리뷰 수를 원본 CSV와 SQL로 대조해, 테스트로 들어간 상품 8개를 찾아 정리.</span>
           </button>
           <button class="skill-tag" type="button">PostgreSQL (Supabase)
             <span class="skill-tooltip">관계형 DB 스키마 설계, RLS 보안 규칙 적용, 실시간(Realtime) 이벤트 감지 및 운영 데이터 CRUD 구현.</span>
           </button>
           <button class="skill-tag" type="button">Chroma DB
-            <span class="skill-tooltip">리뷰·텍스트 임베딩 벡터 데이터를 구축·저장하고 코사인 유사도 기반 시맨틱 검색 엔진 연동.</span>
+            <span class="skill-tooltip">JejuTrip 리뷰를 임베딩해 저장하고, 입력한 취향과 비슷한 리뷰를 찾는 데 사용.</span>
           </button>
         </div>
       </div>
@@ -149,13 +131,16 @@
         <h3>Data Analysis</h3>
         <div class="skill-tags">
           <button class="skill-tag" type="button">Python
-            <span class="skill-tooltip">크롤링 CSV 정제·중복 제거 및 Supabase 적재 파이프라인 스크립트 작성. 전처리부터 분석까지 전체 흐름을 스크립트로 자동화.</span>
+            <span class="skill-tooltip">크롤링, 데이터 정제, DB 적재, 데이터 점검 스크립트 작성.</span>
           </button>
           <button class="skill-tag" type="button">Pandas
-            <span class="skill-tooltip">비정형 리뷰·장소 데이터의 결측치·이상치 처리, 그룹별 집계 및 파생 변수 생성에 활용.</span>
+            <span class="skill-tooltip">JejuTrip 장소·리뷰 데이터 정제와 점검. 리뷰 수 분포를 보고 블로그 글이 섞인 107곳을 찾아냄.</span>
+          </button>
+          <button class="skill-tag" type="button">통계 검정 (z-test)
+            <span class="skill-tooltip">BeautyGuard에서 레티놀 리뷰의 부정 비율이 다른 리뷰보다 높은지 2-비율 z-검정으로 확인.</span>
           </button>
           <button class="skill-tag" type="button">NumPy
-            <span class="skill-tooltip">벡터화 연산으로 대규모 리뷰·좌표 데이터 처리 속도 최적화.</span>
+            <span class="skill-tooltip">K-Digital Training 과정에서 배열 연산과 데이터 전처리 실습 (프로젝트 외 교육과정에서 학습).</span>
           </button>
         </div>
       </div>
@@ -170,7 +155,7 @@
             <span class="skill-tooltip">K-Digital Training 과정에서 XGBoost 기반 모델 튜닝 및 성능 비교 실습 (프로젝트 외 교육과정에서 학습).</span>
           </button>
           <button class="skill-tag" type="button">KoELECTRA (감성 분석)
-            <span class="skill-tooltip">KoELECTRA-small 기반 한국어 리뷰 감성 분석 모델을 BeautyGuard에 실제 적용해 올리브영 리뷰의 긍·부정 키워드와 소비자 반응을 분석.</span>
+            <span class="skill-tooltip">KoELECTRA-small 기반 한국어 리뷰 감성 분석 모델을 BeautyGuard에 적용해 올리브영 리뷰의 긍·부정 반응을 분석하고, 별점을 기준으로 감성별 재현율을 확인.</span>
           </button>
         </div>
       </div>
@@ -194,10 +179,10 @@
         <h3>Data Collection</h3>
         <div class="skill-tags">
           <button class="skill-tag" type="button">Selenium
-            <span class="skill-tooltip">올리브영 리뷰, 제주 관광지 정보 등 정적 API로 확보할 수 없는 데이터를 웹 크롤링으로 수집.</span>
+            <span class="skill-tooltip">올리브영 상품·리뷰와 카카오맵 장소 평점·리뷰처럼 API로 받을 수 없는 데이터를 크롤링으로 수집.</span>
           </button>
           <button class="skill-tag" type="button">REST API
-            <span class="skill-tooltip">카카오맵, 한국관광콘텐츠랩, 네이버 DataLab 등 외부 API를 연동해 장소·좌표·검색 트렌드 데이터 수집.</span>
+            <span class="skill-tooltip">카카오맵, 한국관광공사 관광정보 API, 네이버 DataLab 등 외부 API로 장소·좌표·검색 트렌드 데이터 수집.</span>
           </button>
         </div>
       </div>
@@ -206,13 +191,13 @@
         <h3>AI &amp; Automation</h3>
         <div class="skill-tags">
           <button class="skill-tag" type="button">LangChain
-            <span class="skill-tooltip">RAG 기반 맞춤형 추천 및 실시간 응답 파이프라인 구축 (JejuTrip AI 챗봇).</span>
+            <span class="skill-tooltip">JejuTrip에서 리뷰 임베딩을 Chroma에 저장하고 검색하는 연결에 사용.</span>
           </button>
           <button class="skill-tag" type="button">OpenAI API
-            <span class="skill-tooltip">프롬프트 엔지니어링 및 Function Calling 기반 챗봇·리포트 자동 생성 로직 구현.</span>
+            <span class="skill-tooltip">JejuTrip 챗봇의 요청 분류와 리뷰 요약, BeautyGuard 상품 이미지에서 주성분 추출, J-CREW 학부모 알림 문구 작성.</span>
           </button>
           <button class="skill-tag" type="button">FastAPI
-            <span class="skill-tooltip">FastAPI로 ML 모델 서빙용 REST API 서버 구축(HuggingFace, PyTorch). 배포 인프라 제약에 맞춰 경량 모델 선정 및 최적화.</span>
+            <span class="skill-tooltip">BeautyGuard 감성분석 모델을 FastAPI 서버로 만들어 Render에 배포. 무료 서버 메모리(512MB)에 맞춰 경량 모델로 교체.</span>
           </button>
         </div>
       </div>
@@ -368,9 +353,8 @@
           <span class="timeline-badge badge-edu">교육</span>
           <h3>현직 인공지능 엔지니어와 함께하는 AI 에이전트 개발의 모든 것 (코멘토)</h3>
           <ul class="timeline-details">
-            <li>RFA를 통한 고객의 문제 도식화 후 해결책 구체화</li>
+            <li>RFA로 고객의 문제를 도식화하고 해결책을 구체화</li>
             <li>AI 에이전트 핵심 기능 프로토타입 개발</li>
-            <li>생성형 AI 모델 조정, 최적화, 배포 및 실무 통합</li>
           </ul>
         </div>
       </div>
@@ -445,12 +429,12 @@
       <div class="email-group">
         <button class="email-copy">
           <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.1.5 7.9 6.2 7.9-6.2H4.1ZM20 7.3l-8 6.28L4 7.3V18h16V7.3Z"/></svg>
-          <span class="email-text">dlftks605@gmail.com</span>
+          <span class="email-text">vltnals605@naver.com</span>
           <span class="copy-hint">클릭해서 복사</span>
         </button>
         <button class="email-copy">
           <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.1.5 7.9 6.2 7.9-6.2H4.1ZM20 7.3l-8 6.28L4 7.3V18h16V7.3Z"/></svg>
-          <span class="email-text">vltnals605@naver.com</span>
+          <span class="email-text">dlftks605@gmail.com</span>
           <span class="copy-hint">클릭해서 복사</span>
         </button>
       </div>
