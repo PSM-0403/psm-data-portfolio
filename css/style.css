@@ -1215,3 +1215,29 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .pd-kpis { grid-template-columns: repeat(2, 1fr); }
   .pd-insight { padding: 18px 18px; }
 }
+
+/* Findings 안 작은 분포 차트 (JejuTrip 리뷰 수 분포) */
+.pd-dist { margin: 14px 0 12px; }
+.pd-dist-bars {
+  display: flex; align-items: flex-end; gap: 2px;
+  height: 120px; padding-top: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.pd-dist-bar {
+  flex: 1; position: relative; min-height: 1px;
+  background: var(--text-faint); opacity: 0.5;
+  border-radius: 2px 2px 0 0;
+}
+.pd-dist-bar.is-hl { background: var(--accent-3); opacity: 1; }
+.pd-dist-bar span {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  margin-bottom: 3px; font-size: 0.72rem; font-style: normal; white-space: nowrap;
+  color: var(--text-dim);
+}
+.pd-dist-bar.is-hl span { color: var(--accent-3); font-weight: 600; }
+.pd-dist-axis { display: flex; gap: 2px; margin-top: 4px; }
+.pd-dist-axis b {
+  flex: 1; font-weight: 400; font-size: 0.7rem; color: var(--text-faint);
+  text-align: center; white-space: nowrap; overflow: visible;
+}
+.pd-dist figcaption { margin-top: 6px; font-size: 0.78rem; color: var(--text-faint); }
