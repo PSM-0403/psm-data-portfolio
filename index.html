@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>피수민 | Data Analyst Portfolio</title>
-<meta name="description" content="데이터 분석가 피수민의 포트폴리오. 프로젝트, 기술 스택, 경력을 소개합니다.">
+<title>피수민 | 포트폴리오</title>
+<meta name="description" content="피수민의 데이터 프로젝트 포트폴리오. 데이터를 직접 모으고 정리하고 분석한 과정을 소개합니다.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="피수민 | Data Analyst Portfolio">
-<meta property="og:description" content="데이터 분석가 피수민의 포트폴리오. BeautyGuard, J-CREW, JejuTrip AI 프로젝트를 소개합니다.">
+<meta property="og:title" content="피수민 | 포트폴리오">
+<meta property="og:description" content="피수민의 데이터 프로젝트 포트폴리오. BeautyGuard, J-CREW, JejuTrip AI 프로젝트를 소개합니다.">
 <meta property="og:image" content="https://psm-data-portfolio.vercel.app/assets/og-image.png">
 <meta property="og:url" content="https://psm-data-portfolio.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +26,11 @@
   <div class="nav-inner">
     <a href="#home" class="logo">PSM<span class="dot">.</span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#certificates" class="nav-link">Certificates</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#experience" class="nav-link">Experience</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#about" class="nav-link">About</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
     <a href="#contact" class="btn btn-small btn-outline nav-cta">연락하기</a>
@@ -43,17 +43,11 @@
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
   <div class="hero-content reveal">
-    <p class="hero-eyebrow"><span class="pulse-dot"></span> 새로운 기회를 찾고 있습니다</p>
     <h1 class="hero-title">
       데이터에서 답을 찾는,<br>
       <span class="gradient-text">피수민</span>입니다
     </h1>
-    <h2 class="hero-role">Data Analyst</h2>
-    <p class="hero-tagline">배움이라는 연료로 새로운 도전을 향해 가속합니다.</p>
-    <p class="hero-desc">
-      데이터에서 패턴을 찾아내고, 그 인사이트를 실제 의사결정으로 연결하는 것을 좋아합니다.
-      제주 여행 데이터부터 화장품 시장 트렌드, 농구교실 출결 데이터까지 서로 다른 분야의 데이터를 다뤄 왔습니다.
-    </p>
+    <p class="hero-desc">제주 여행, 화장품 시장, 농구교실 출결. 세 분야의 데이터를 직접 모으고 분석했습니다.</p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">프로젝트 보기 →</a>
     </div>
@@ -67,45 +61,226 @@
     </div>
   </div>
 
-  <a href="#about" class="scroll-cue" aria-label="아래로 스크롤">
-    <span></span>
-  </a>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section class="section" id="about">
+<!-- ===== PROJECTS ===== -->
+<section class="section section-alt" id="projects">
   <div class="section-inner">
-    <p class="section-tag reveal">01 · About</p>
-    <h2 class="section-title reveal">저를 소개합니다</h2>
+    <p class="section-tag reveal">01 · Projects</p>
+    <h2 class="section-title reveal">프로젝트</h2>
 
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>
-          수원대학교 컴퓨터학부 컴퓨터SW에서 전공 지식을 쌓으며, 정보처리기사·ADsP·SQLD·AI-POT 등
-          데이터·AI 분야 자격증을 하나씩 취득해왔습니다. 이론에 그치지 않고 직접 프로젝트로 옮겨보며
-          배운 것을 검증하는 과정을 즐깁니다.
-        </p>
-        <p>
-          취향 기반 여행 코스를 추천하는 JejuTrip AI, 화장품 시장 트렌드를 분석하는 BeautyGuard,
-          농구교실 운영을 돕는 관리 플랫폼 J-CREW까지 서로 다른 도메인의 데이터를 다뤄 봤습니다.
-          현장의 문제를 데이터로 풀어내는 데이터 분석가가 되는 것이 목표입니다.
-        </p>
+    <div class="projects-grid">
 
-        <ul class="about-facts">
-          <li><span>🎓</span> 학력 · 수원대학교 컴퓨터학부 컴퓨터SW</li>
-          <li><span>📍</span> 위치 · 대한민국, 경기 고양</li>
-          <li><span>💬</span> 언어 · 한국어, 영어(TOEIC 705)</li>
-          <li><span>❤️</span> 관심사 · 데이터 분석, 데이터 시각화, 업무 자동화</li>
-        </ul>
+      <article class="project-card tilt reveal">
+        <div class="project-thumb thumb-3">
+          <div class="thumb-brand">
+            <img class="project-emoji-icon" src="assets/icons/beautyguard-icon.png" alt="BeautyGuard 아이콘" width="40" height="40">
+            <span class="thumb-brand-title">Beauty<em>Guard</em></span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>BeautyGuard · 화장품 시장 분석 대시보드</h3>
+            <div class="project-links">
+              <a href="https://github.com/PSM-0403/BeautyGuard" target="_blank" rel="noopener" aria-label="GitHub 저장소">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
+              </a>
+              <a href="https://beautyguard-dashboard.vercel.app" target="_blank" rel="noopener" aria-label="라이브 데모">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-result">리뷰 973건으로 감성분석 결과를 검증하고, 근거가 부족한 결론은 보류</p>
+          <p>네이버 검색 트렌드와 올리브영 상품·리뷰 데이터를 성분 단위로 묶어, 화장품 MD의 신제품 기획을 돕는 시장 분석 대시보드입니다. 부트캠프 최종프로젝트 최우수상.</p>
+          <div class="project-tags">
+            <span>Python</span><span>SQL</span><span>통계 검정</span>
+          </div>
+          <a href="projects/beautyguard.html" class="project-more">자세히 보기 →</a>
+        </div>
+      </article>
+
+      <article class="project-card tilt reveal">
+        <div class="project-thumb thumb-1">
+          <div class="logo-plate logo-plate-sm">
+            <img src="assets/icons/jcrew-logo.jpg" alt="J-CREW 로고" width="72" height="72">
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>J-CREW · 농구교실 관리 시스템</h3>
+            <div class="project-links">
+              <a href="https://github.com/PSM-0403/jcrew" target="_blank" rel="noopener" aria-label="GitHub 저장소">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
+              </a>
+              <a href="https://jcrewbasketball.vercel.app" target="_blank" rel="noopener" aria-label="라이브 데모">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-result">코치 경험을 바탕으로 연락 없는 결석을 이탈 위험 기준으로 설계</p>
+          <p>유소년 농구교실을 위한 AI 통합 관리 플랫폼입니다. 코치로 일하며 겪은 행정 업무의 불편함을 직접 풀기 위해 만들었고, 출결 기록으로 이탈 위험 회원을 알려줍니다.</p>
+          <div class="project-tags">
+            <span>SQL</span><span>지표 설계</span><span>OpenAI API</span>
+          </div>
+          <a href="projects/jcrew.html" class="project-more">자세히 보기 →</a>
+        </div>
+      </article>
+
+      <article class="project-card tilt reveal">
+        <div class="project-thumb thumb-2">
+          <div class="thumb-brand">
+            <span class="project-emoji">🍊</span>
+            <span class="thumb-brand-title thumb-brand-jeju"><em>Jeju</em>Trip AI</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>JejuTrip AI · 제주 여행 코스 추천</h3>
+            <div class="project-links">
+              <a href="https://github.com/PSM-0403/JejuTrip_AI" target="_blank" rel="noopener" aria-label="GitHub 저장소">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
+              </a>
+              <a href="https://jejutripai.streamlit.app" target="_blank" rel="noopener" aria-label="라이브 데모">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-result">리뷰 분포를 다시 점검해 블로그 글이 섞인 107곳을 찾고, 키워드 점수 방식을 고쳐 반영</p>
+          <p>취향을 입력하면 제주 여행 코스를 짜 주고, 챗봇으로 일정을 바꿀 수 있는 여행 추천 서비스입니다. 관광공사 API와 카카오맵에서 모은 장소 1,054곳, 리뷰 18,836개를 바탕으로 추천합니다.</p>
+          <div class="project-tags">
+            <span>Selenium</span><span>Pandas</span><span>OpenAI API</span>
+          </div>
+          <a href="projects/jejutrip.html" class="project-more">자세히 보기 →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="section-inner">
+    <p class="section-tag reveal">02 · Experience</p>
+    <h2 class="section-title reveal">경력 &amp; 활동</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2026.05 - 2026.06</span>
+          <span class="timeline-badge badge-edu">교육</span>
+          <h3>현직 인공지능 엔지니어와 함께하는 AI 에이전트 개발의 모든 것 (코멘토)</h3>
+          <ul class="timeline-details">
+            <li>RFA로 고객의 문제를 도식화하고 해결책을 구체화</li>
+            <li>AI 에이전트 핵심 기능 프로토타입 개발</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025.12 - 2026.05</span>
+          <span class="timeline-badge badge-edu">교육</span>
+          <h3>K-Digital Training · AI 활용 데이터 분석가 양성과정 (멀티캠퍼스)</h3>
+          <ul class="timeline-details">
+            <li>데이터 분석: Python(Pandas, NumPy)을 활용한 EDA 및 데이터 전처리</li>
+            <li>머신러닝/딥러닝: Scikit-learn(RandomForest, XGBoost), PyTorch(CNN, MobileNetV2) 모델 구현 및 성능 최적화</li>
+            <li>AI 신기술: LangChain 및 Chroma DB를 활용한 RAG(Retrieval-Augmented Generation) 시스템 구축</li>
+          </ul>
+          <div class="timeline-award">
+            <span class="award-icon">🏆</span>
+            <div>
+              <strong>최우수상 · 최종프로젝트 경진대회</strong> <span class="award-date">(2026.05.26)</span>
+              <p>
+                "화장품 성분 트렌드 라이프사이클 및 시장 반영 분석 기반 MD 의사결정 자동화 시스템(BeautyGuard)"으로
+                최종프로젝트 경진대회 최우수상 수상.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023.04 - 현재 (취업 시 퇴사 예정)</span>
+          <span class="timeline-badge badge-work">경력</span>
+          <h3>유소년 농구 코치 (3년+)</h3>
+          <ul class="timeline-orgs">
+            <li>제이크루 농구교실 (구 GPNB 고양점) · 유소년 코치 — 2025.12~현재</li>
+            <li>GPNB 고양점 · 스킬 트레이너 — 2024.02~2025.12</li>
+            <li>파주 월드드림 농구교실 · 유소년 코치 — 2023.04~2024.06</li>
+          </ul>
+          <ul class="timeline-details">
+            <li>유소년 맞춤형 교육: 연령별 신체 발달 단계에 맞춘 농구 트레이닝 프로그램 운영 및 기술 지도</li>
+            <li>신뢰 기반 소통: 초등생부터 성인까지 다양한 연령층과의 소통 및 학부모 상담을 통한 학생별 피드백 전달과 교육 만족도 관리</li>
+            <li>장기 근속 및 책임감: 학업과 병행하며 책임감 있게 근속하여 교육 서비스의 연속성 유지</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2020.03 - 2026.08</span>
+          <span class="timeline-badge badge-edu">학력</span>
+          <h3>수원대학교 · 컴퓨터학부 컴퓨터SW (학점 3.63/4.5)</h3>
+          <p>데이터베이스, 알고리즘, R 데이터분석, 빅데이터 시각화 탐색 등 데이터·AI 관련 전공 과목을 이수하며 실무 기초를 쌓았습니다.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATES ===== -->
+<section class="section section-alt" id="certificates">
+  <div class="section-inner">
+    <p class="section-tag reveal">03 · Certificates</p>
+    <h2 class="section-title reveal">자격증 &amp; 어학</h2>
+
+    <div class="cert-card reveal">
+      <div class="cert-row">
+        <span class="cert-date">2026.09</span>
+        <span class="cert-name">정보처리기사</span>
+        <span class="cert-org">한국산업인력공단</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-date">2026.08</span>
+        <span class="cert-name">AI-POT (AI 프롬프트활용능력) 1급</span>
+        <span class="cert-org">한국생산성본부</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-date">2025.11</span>
+        <span class="cert-name">ADsP (데이터분석 준전문가)</span>
+        <span class="cert-org">한국데이터산업진흥원</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-date">2025.10</span>
+        <span class="cert-name">TOEIC 705점</span>
+        <span class="cert-org">YBM (어학 성적)</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-date">2025.05</span>
+        <span class="cert-name">SQLD (SQL 개발자)</span>
+        <span class="cert-org">한국데이터산업진흥원</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-date">2025.03</span>
+        <span class="cert-name">컴퓨터활용능력 2급</span>
+        <span class="cert-org">대한상공회의소</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== SKILLS ===== -->
-<section class="section section-alt" id="skills">
+<section class="section" id="skills">
   <div class="section-inner">
-    <p class="section-tag reveal">02 · Skills</p>
+    <p class="section-tag reveal">04 · Skills</p>
     <h2 class="section-title reveal">기술 스택</h2>
     <p class="section-desc section-desc-tight reveal">프로젝트를 진행하며 실제로 활용한 기술과 경험입니다.</p>
     <p class="section-hint reveal">태그를 클릭하거나 마우스를 올리면 상세 경험을 확인할 수 있습니다.</p>
@@ -204,219 +379,38 @@
   </div>
 </section>
 
-<!-- ===== CERTIFICATES ===== -->
-<section class="section" id="certificates">
+<!-- ===== ABOUT ===== -->
+<section class="section section-alt" id="about">
   <div class="section-inner">
-    <p class="section-tag reveal">03 · Certificates</p>
-    <h2 class="section-title reveal">자격증 &amp; 어학</h2>
+    <p class="section-tag reveal">05 · About</p>
+    <h2 class="section-title reveal">저를 소개합니다</h2>
 
-    <div class="cert-card reveal">
-      <div class="cert-row">
-        <span class="cert-date">2026.09</span>
-        <span class="cert-name">정보처리기사</span>
-        <span class="cert-org">한국산업인력공단</span>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          수원대학교 컴퓨터학부 컴퓨터SW에서 전공 지식을 쌓으며, 정보처리기사·ADsP·SQLD·AI-POT 등
+          데이터·AI 분야 자격증을 하나씩 취득해왔습니다. 이론에 그치지 않고 직접 프로젝트로 옮겨보며
+          배운 것을 검증하는 과정을 즐깁니다.
+        </p>
+        <p>
+          취향 기반 여행 코스를 추천하는 JejuTrip AI, 화장품 시장 트렌드를 분석하는 BeautyGuard,
+          농구교실 운영을 돕는 관리 플랫폼 J-CREW까지 서로 다른 도메인의 데이터를 다뤄 봤습니다.
+          현장의 문제를 데이터로 풀어내는 데이터 분석가가 되는 것이 목표입니다.
+        </p>
+
+        <ul class="about-facts">
+          <li><span>🎓</span> 학력 · 수원대학교 컴퓨터학부 컴퓨터SW</li>
+          <li><span>📍</span> 위치 · 대한민국, 경기 고양</li>
+          <li><span>💬</span> 언어 · 한국어, 영어(TOEIC 705)</li>
+          <li><span>❤️</span> 관심사 · 데이터 분석, 데이터 시각화, 업무 자동화</li>
+        </ul>
       </div>
-      <div class="cert-row">
-        <span class="cert-date">2026.08</span>
-        <span class="cert-name">AI-POT (AI 프롬프트활용능력) 1급</span>
-        <span class="cert-org">한국생산성본부</span>
-      </div>
-      <div class="cert-row">
-        <span class="cert-date">2025.11</span>
-        <span class="cert-name">ADsP (데이터분석 준전문가)</span>
-        <span class="cert-org">한국데이터산업진흥원</span>
-      </div>
-      <div class="cert-row">
-        <span class="cert-date">2025.10</span>
-        <span class="cert-name">TOEIC 705점</span>
-        <span class="cert-org">YBM (어학 성적)</span>
-      </div>
-      <div class="cert-row">
-        <span class="cert-date">2025.05</span>
-        <span class="cert-name">SQLD (SQL 개발자)</span>
-        <span class="cert-org">한국데이터산업진흥원</span>
-      </div>
-      <div class="cert-row">
-        <span class="cert-date">2025.03</span>
-        <span class="cert-name">컴퓨터활용능력 2급</span>
-        <span class="cert-org">대한상공회의소</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section class="section section-alt" id="projects">
-  <div class="section-inner">
-    <p class="section-tag reveal">04 · Projects</p>
-    <h2 class="section-title reveal">프로젝트</h2>
-
-    <div class="projects-grid">
-
-      <article class="project-card tilt reveal">
-        <div class="project-thumb thumb-3">
-          <div class="thumb-brand">
-            <img class="project-emoji-icon" src="assets/icons/beautyguard-icon.png" alt="BeautyGuard 아이콘" width="40" height="40">
-            <span class="thumb-brand-title">Beauty<em>Guard</em></span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>BeautyGuard · 화장품 시장 분석 대시보드</h3>
-            <div class="project-links">
-              <a href="https://github.com/PSM-0403/BeautyGuard" target="_blank" rel="noopener" aria-label="GitHub 저장소">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
-              </a>
-              <a href="https://beautyguard-dashboard.vercel.app" target="_blank" rel="noopener" aria-label="라이브 데모">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <p>네이버 검색 트렌드와 올리브영 상품·리뷰 데이터를 성분 단위로 묶어, 화장품 MD의 신제품 기획을 돕는 시장 분석 대시보드입니다. 부트캠프 최종프로젝트 최우수상.</p>
-          <div class="project-tags">
-            <span>Python</span><span>SQL</span><span>감성분석</span><span>통계 검정</span>
-          </div>
-          <a href="projects/beautyguard.html" class="project-more">자세히 보기 →</a>
-        </div>
-      </article>
-
-      <article class="project-card tilt reveal">
-        <div class="project-thumb thumb-1">
-          <div class="logo-plate logo-plate-sm">
-            <img src="assets/icons/jcrew-logo.jpg" alt="J-CREW 로고" width="72" height="72">
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>J-CREW · 농구교실 관리 시스템</h3>
-            <div class="project-links">
-              <a href="https://github.com/PSM-0403/jcrew" target="_blank" rel="noopener" aria-label="GitHub 저장소">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
-              </a>
-              <a href="https://jcrewbasketball.vercel.app" target="_blank" rel="noopener" aria-label="라이브 데모">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <p>유소년 농구교실을 위한 AI 통합 관리 플랫폼입니다. 코치로 일하며 겪은 행정 업무의 불편함을 직접 풀기 위해 만들었고, 출결 기록으로 이탈 위험 회원을 알려줍니다.</p>
-          <div class="project-tags">
-            <span>React</span><span>Supabase</span><span>OpenAI API</span>
-          </div>
-          <a href="projects/jcrew.html" class="project-more">자세히 보기 →</a>
-        </div>
-      </article>
-
-      <article class="project-card tilt reveal">
-        <div class="project-thumb thumb-2">
-          <div class="thumb-brand">
-            <span class="project-emoji">🍊</span>
-            <span class="thumb-brand-title thumb-brand-jeju"><em>Jeju</em>Trip AI</span>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>JejuTrip AI · 제주 여행 코스 추천</h3>
-            <div class="project-links">
-              <a href="https://github.com/PSM-0403/JejuTrip_AI" target="_blank" rel="noopener" aria-label="GitHub 저장소">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.1.83-.27.83-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.83 2.82 1.31 3.5 1 .1-.78.42-1.31.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .31.22.69.84.57A12 12 0 0 0 12 .3Z"/></svg>
-              </a>
-              <a href="https://jejutripai.streamlit.app" target="_blank" rel="noopener" aria-label="라이브 데모">
-                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <p>취향을 입력하면 제주 여행 코스를 짜 주고, 챗봇으로 일정을 바꿀 수 있는 여행 추천 서비스입니다. 관광공사 API와 카카오맵에서 모은 장소 1,054곳, 리뷰 18,836개를 바탕으로 추천합니다.</p>
-          <div class="project-tags">
-            <span>Selenium</span><span>Pandas</span><span>Streamlit</span><span>OpenAI API</span>
-          </div>
-          <a href="projects/jejutrip.html" class="project-more">자세히 보기 →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== EXPERIENCE ===== -->
-<section class="section" id="experience">
-  <div class="section-inner">
-    <p class="section-tag reveal">05 · Experience</p>
-    <h2 class="section-title reveal">경력 &amp; 활동</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2026.05 - 2026.06</span>
-          <span class="timeline-badge badge-edu">교육</span>
-          <h3>현직 인공지능 엔지니어와 함께하는 AI 에이전트 개발의 모든 것 (코멘토)</h3>
-          <ul class="timeline-details">
-            <li>RFA로 고객의 문제를 도식화하고 해결책을 구체화</li>
-            <li>AI 에이전트 핵심 기능 프로토타입 개발</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2025.12 - 2026.05</span>
-          <span class="timeline-badge badge-edu">교육</span>
-          <h3>K-Digital Training · AI 활용 데이터 분석가 양성과정 (멀티캠퍼스)</h3>
-          <ul class="timeline-details">
-            <li>데이터 분석: Python(Pandas, NumPy)을 활용한 EDA 및 데이터 전처리</li>
-            <li>머신러닝/딥러닝: Scikit-learn(RandomForest, XGBoost), PyTorch(CNN, MobileNetV2) 모델 구현 및 성능 최적화</li>
-            <li>AI 신기술: LangChain 및 Chroma DB를 활용한 RAG(Retrieval-Augmented Generation) 시스템 구축</li>
-          </ul>
-          <div class="timeline-award">
-            <span class="award-icon">🏆</span>
-            <div>
-              <strong>최우수상 · 최종프로젝트 경진대회</strong> <span class="award-date">(2026.05.26)</span>
-              <p>
-                "화장품 성분 트렌드 라이프사이클 및 시장 반영 분석 기반 MD 의사결정 자동화 시스템(BeautyGuard)"으로
-                최종프로젝트 경진대회 최우수상 수상.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2023.04 - 현재 (취업 시 퇴사 예정)</span>
-          <span class="timeline-badge badge-work">경력</span>
-          <h3>유소년 농구 코치 (3년+)</h3>
-          <ul class="timeline-orgs">
-            <li>제이크루 농구교실 (구 GPNB 고양점) · 유소년 코치 — 2025.12~현재</li>
-            <li>GPNB 고양점 · 스킬 트레이너 — 2024.02~2025.12</li>
-            <li>파주 월드드림 농구교실 · 유소년 코치 — 2023.04~2024.06</li>
-          </ul>
-          <ul class="timeline-details">
-            <li>유소년 맞춤형 교육: 연령별 신체 발달 단계에 맞춘 농구 트레이닝 프로그램 운영 및 기술 지도</li>
-            <li>신뢰 기반 소통: 초등생부터 성인까지 다양한 연령층과의 소통 및 학부모 상담을 통한 학생별 피드백 전달과 교육 만족도 관리</li>
-            <li>장기 근속 및 책임감: 학업과 병행하며 책임감 있게 근속하여 교육 서비스의 연속성 유지</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span class="timeline-date">2020.03 - 2026.08</span>
-          <span class="timeline-badge badge-edu">학력</span>
-          <h3>수원대학교 · 컴퓨터학부 컴퓨터SW (학점 3.63/4.5)</h3>
-          <p>데이터베이스, 알고리즘, R 데이터분석, 빅데이터 시각화 탐색 등 데이터·AI 관련 전공 과목을 이수하며 실무 기초를 쌓았습니다.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section class="section section-alt" id="contact">
+<section class="section" id="contact">
   <div class="section-inner contact-inner">
     <p class="section-tag reveal center">06 · Contact</p>
     <h2 class="section-title center reveal">함께 이야기 나눠요</h2>
